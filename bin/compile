@@ -34,22 +34,7 @@ function indent() {
 # config
 # hardcoded as per stable versions available - upgrade in the next release
 
-#VERSION_FIREFOX=82.0.1
-#VERSION_GECKODRIVER=0.27.0
-
-#VERSION_FIREFOX=84.0
-#VERSION_GECKODRIVER=0.28.0
-
-#VERSION_FIREFOX=89.0
-#VERSION_GECKODRIVER=0.29.1
-
-#VERSION_FIREFOX=96.0.3
-#VERSION_FIREFOX=98.0.2
-
-#VERSION_FIREFOX=99.0
-#VERSION_GECKODRIVER=0.30.0
-
-#VERSION_FIREFOX=102.0
+#VERSION_FIREFOX=119.0 <= Try next
 VERSION_FIREFOX=113.0
 VERSION_GECKODRIVER=0.33.0
 
@@ -70,7 +55,7 @@ case "$STACK" in
   "cedar-14")
     PACKAGES="libxss1"
     ;;
-  "heroku-16" | "heroku-18" | "heroku-20")
+  "heroku-16" | "heroku-18" | "heroku-20" | "heroku-22")
     PACKAGES="
       libappindicator1
       libasound2
@@ -98,7 +83,7 @@ case "$STACK" in
     "
     ;;
   *)
-    error "STACK must be 'cedar-14', 'heroku-16', or 'heroku-18' or 'heroku-20'"
+    error "STACK must be 'cedar-14', 'heroku-16', or 'heroku-18' or 'heroku-20' or 'heroku-22'"
 esac
 
 if [ ! -f $CACHE_DIR/PURGED_CACHE_V1 ]; then
