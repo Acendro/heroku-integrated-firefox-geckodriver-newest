@@ -34,8 +34,8 @@ function indent() {
 # config
 # hardcoded as per stable versions available - upgrade in the next release
 
-#VERSION_FIREFOX=119.0 <= Try next
-VERSION_FIREFOX=113.0
+VERSION_FIREFOX=119.0 <= Try next
+#VERSION_FIREFOX=113.0
 VERSION_GECKODRIVER=0.33.0
 
 LANG=en-US
